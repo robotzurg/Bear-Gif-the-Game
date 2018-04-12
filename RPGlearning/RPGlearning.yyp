@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "03d6d200-cba6-4204-aab7-77bc65304b18",
+            "Value": {
+                "id": "de0ca22b-6ef0-4f09-abc5-0ad1950abf0b",
+                "resourcePath": "scripts\\create_enemy_team\\create_enemy_team.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "069b9efe-46f0-457f-8f8b-c634e489a471",
             "Value": {
                 "id": "1c5558bd-8e0f-409e-bc3a-42d48f40aff3",
@@ -83,6 +91,14 @@
             "Value": {
                 "id": "e8d0fa87-d81e-4bbc-a9fa-a64b7cc40455",
                 "resourcePath": "sprites\\s_player2\\s_player2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "115df9bb-a9eb-42f3-9d32-010649e285fd",
+            "Value": {
+                "id": "f27525f5-3577-4775-a5e6-7ba05743a4b1",
+                "resourcePath": "sprites\\s_arrow\\s_arrow.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -319,6 +335,14 @@
             }
         },
         {
+            "Key": "d9756f3d-4a91-4ee4-9ca3-c2046089e7ec",
+            "Value": {
+                "id": "e1b1f2fc-3f22-4174-bd88-6a414c5bf3ac",
+                "resourcePath": "objects\\o_enemyparent\\o_enemyparent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "dc7c7ccd-de43-47f6-acb6-21c3d52823ad",
             "Value": {
                 "id": "750ad865-8d29-423c-8b81-4c613d3eab96",
@@ -359,6 +383,14 @@
             }
         },
         {
+            "Key": "f5105d89-8c73-4f9e-89b2-7ef7a5264b1d",
+            "Value": {
+                "id": "826f3479-0a82-42dc-b5c1-b36927be40fc",
+                "resourcePath": "scripts\\enemy_init\\enemy_init.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f654b51b-0e1c-4e36-84ec-36efd0c86bf6",
             "Value": {
                 "id": "b6142057-d6bf-47dd-921e-348c61a4392b",
@@ -385,7 +417,9 @@
     ],
     "script_order": [
         "f654b51b-0e1c-4e36-84ec-36efd0c86bf6",
+        "f5105d89-8c73-4f9e-89b2-7ef7a5264b1d",
         "f7cc541f-c751-4068-95f6-60a348471df3",
+        "03d6d200-cba6-4204-aab7-77bc65304b18",
         "a9aef190-f671-4178-93fd-fc357f1714f0"
     ],
     "tutorial": ""
