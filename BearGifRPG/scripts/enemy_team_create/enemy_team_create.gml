@@ -40,3 +40,9 @@ with enemy2 {
 	my_defense = enemy2defense;
 	sprite_index = my_sprite;
 }
+
+en_inst_ids = ds_list_create();
+var enemycount = 2;
+if enemycount = 2 {
+	ds_list_add(inst_ids,enemy1,enemy2);
+}

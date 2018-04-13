@@ -38,6 +38,8 @@ with bear1 {
 	my_attack = bear1attack;
 	my_defense = bear1defense;
 	sprite_index = my_sprite;
+	current_health = my_health;
+	max_health = my_health;
 }
 
 with bear2 {
@@ -48,6 +50,8 @@ with bear2 {
 	my_attack = bear2attack;
 	my_defense = bear2defense;
 	sprite_index = my_sprite;
+	current_health = my_health;
+	max_health = my_health;
 }
 
 with bear3 {
@@ -58,6 +62,8 @@ with bear3 {
 	my_attack = bear3attack;
 	my_defense = bear3defense;
 	sprite_index = my_sprite;
+	current_health = my_health;
+	max_health = my_health;
 }
 inst_ids = ds_list_create();
 ds_list_add(inst_ids,bear1,bear2,bear3);
