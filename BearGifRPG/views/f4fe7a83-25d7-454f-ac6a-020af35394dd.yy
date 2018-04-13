@@ -1,0 +1,31 @@
+{
+    "id": "f4fe7a83-25d7-454f-ac6a-020af35394dd",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "f4fe7a83-25d7-454f-ac6a-020af35394dd",
+    "children": [
+        "1a442fbb-a530-4de5-9a99-2ac17cba0b12",
+        "bfe52b42-255e-4f63-aea9-1c6b7a60a3f5",
+        "13406310-4e2f-443a-bed5-703077f9846d",
+        "a5e2c079-e6c1-4655-a6d2-ed83dea60b92",
+        "37a944ee-68e6-4f0c-9ef2-53652461653d",
+        "2d106e48-ec9f-4e00-816c-d4a41aab4171",
+        "7669d812-329f-47ae-8484-3e716c3750ed",
+        "62f6a20f-d6e5-4f7a-997b-602d3d6ebe6e",
+        "00832ed1-1281-4a32-ae2a-e2b9005d9216",
+        "ff67593e-3434-4826-a907-30d003efe336",
+        "a4b12c24-8171-4a2a-a1cd-d5c106b61c7e",
+        "a4e90a30-8d58-409e-b5af-45185c0c8132",
+        "d9cb5800-051f-4c04-bb62-ea4e70ddb14a",
+        "fb6a2149-f5ea-4ac8-b056-7edb7504ce63",
+        "1e7b8b6d-58f9-496d-ac63-6ab0da8782b1",
+        "7dd3d9b9-df2a-43ed-ac5d-fc888b719b5b",
+        "5c743cfe-204a-41ff-83ac-ae09c9444f24",
+        "acd0d24f-e9b8-43a2-a4c3-02aef3ddb548",
+        "36371578-8749-4d94-aa9f-cb055cbdb109"
+    ],
+    "filterType": "GMSprite",
+    "folderName": "Bears",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
