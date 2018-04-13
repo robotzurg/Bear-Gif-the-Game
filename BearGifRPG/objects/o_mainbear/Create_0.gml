@@ -6,3 +6,5 @@ my_health = 100
 my_attack = 100
 my_defense = 100
 sprite_index = my_sprite;
+max_health = my_health;
+current_health = my_health;

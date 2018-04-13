@@ -59,3 +59,5 @@ with bear3 {
 	my_defense = bear3defense;
 	sprite_index = my_sprite;
 }
+inst_ids = ds_list_create();
+ds_list_add(inst_ids,bear1,bear2,bear3);
