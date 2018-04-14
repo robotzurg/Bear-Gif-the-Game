@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "072a1d74-ca50-4f5c-beb6-140c93ec9526",
+            "Value": {
+                "id": "6933ff3c-128d-40e1-b082-980fb3da54c2",
+                "resourcePath": "sprites\\s_key\\s_key.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c659c86-8f61-4579-8741-3bb96424954e",
             "Value": {
                 "id": "ff213707-4742-4872-94c4-91b3cbc97991",
@@ -487,6 +495,14 @@
             }
         },
         {
+            "Key": "80783b26-67b0-44a0-a9c3-100937b69eaa",
+            "Value": {
+                "id": "219bc5a1-c5a7-4b6e-89bf-216e4fb533a0",
+                "resourcePath": "sprites\\bk_dungeon\\bk_dungeon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "825e73bb-ed83-4db7-93b2-077102d7ac04",
             "Value": {
                 "id": "acaa8b15-ce90-4416-aec8-a365a37c4d1b",
@@ -540,6 +556,14 @@
                 "id": "2adffb4d-4860-4e4b-a327-bc27dcdc721d",
                 "resourcePath": "scripts\\room_goto_fade\\room_goto_fade.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "946c1dcb-d142-468b-9a70-6e8a79ba04b4",
+            "Value": {
+                "id": "73487350-4134-41ee-abae-a3b2347f4c3c",
+                "resourcePath": "sprites\\tile_dungeon\\tile_dungeon.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

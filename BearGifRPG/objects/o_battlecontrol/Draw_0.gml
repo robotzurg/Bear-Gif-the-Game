@@ -16,13 +16,8 @@ switch global.turnfocus {
 			 draw_sprite(bear2inst.my_sprite,idle,719,610);
 			 draw_sprite(bear3inst.my_sprite,idle,719,704); break;
 }
-draw_text(x,y,bear1inst);
-draw_text(x,y+50,bear2inst);
-draw_text(x,y+100,bear3inst);
 draw_text(x,y+150,global.battlestart);
 draw_text(x,y+200,global.turnfocus);
-draw_text(x,y+250,bear1inst.stop_intro);
-draw_text(x,y+300,bear1inst.on_turn);
 if global.alarm_done = true {
 draw_text(x,y+350,enemy1inst.t);
 }
