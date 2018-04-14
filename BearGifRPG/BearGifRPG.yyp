@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "31012fab-9eed-400a-8917-2b035d1d0402",
+            "Value": {
+                "id": "a3214363-0da6-4bb1-bc7f-7e788da7fea1",
+                "resourcePath": "scripts\\turn_reset\\turn_reset.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3131ef21-fe23-40f4-909a-48ec99c1bb19",
             "Value": {
                 "id": "3fc5d4c8-f5e4-4d82-b35c-6daadf98cfdd",
@@ -1085,7 +1093,8 @@
         "fe3c291f-7785-4d36-9f53-6487f769247c",
         "53b93879-cbd8-4514-8178-325a15006752",
         "32b4fa22-54e5-44aa-a3a2-ba193b1c8f55",
-        "912013af-6257-452e-97d5-48d913e81877"
+        "912013af-6257-452e-97d5-48d913e81877",
+        "31012fab-9eed-400a-8917-2b035d1d0402"
     ],
     "tutorial": ""
 }

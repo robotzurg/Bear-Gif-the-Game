@@ -4,16 +4,18 @@ if global.battlestart = true {
 	if global.turnside = "Player" {
 		if open_wep_panel = true {
 			if !instance_exists(o_atkheadbutt) {
-				instance_create_layer(296,596,"UI",o_atkheadbutt);
 				alarm[1] = drawdelay;
+				instance_create_layer(296,596,"UI",o_atkheadbutt);
 			}
 		}
 		if open_enemy_panel = true {
 			if instance_number(o_enemyselect) != 2 {
-				select1 = instance_create_depth(496,536,"UI",o_enemyselect);
-				select2 = instance_create_depth(496,664,"UI",o_enemyselect);
 				drawdelay = 1;
 				alarm[1] = drawdelay;
+				select1 = instance_create_depth(496,536,"UI",o_enemyselect);
+				select2 = instance_create_depth(496,664,"UI",o_enemyselect);
+				select1.my_name = enemy1inst.my_name;
+				select2.my_name = enemy2inst.my_name;
 			}
 		}
 		if global.turnfocus >= 4 {
@@ -55,15 +57,15 @@ if global.battlestart = true {
 						case 1: enemy1inst.current_health -= bear1inst.my_attack break;
 						case 2: enemy1inst.current_health -= bear2inst.my_attack break;
 						case 3: enemy1inst.current_health -= bear3inst.my_attack break;
-						global.turnfocus++;
 						}
+						turn_reset();
 					} else if objectClicked = select2 {
 						switch global.turnfocus {
 						case 1: enemy2inst.current_health -= bear1inst.my_attack break;
 						case 2: enemy2inst.current_health -= bear2inst.my_attack break;
 						case 3: enemy2inst.current_health -= bear3inst.my_attack break;
-						global.turnfocus++;
 						}
+						turn_reset();
 					}
 				
 			}
@@ -74,16 +76,13 @@ if global.battlestart = true {
 		switch global.turnfocus {
 			case 1: bear1inst.my_defense += 5; 
 					bear1inst.defense_up = true;
-					global.turnfocus++;
-					global.choice = "Default" break;
+					turn_reset(); break;
 			case 2: bear2inst.my_defense += 5;
 					bear2inst.defense_up = true;
-					global.turnfocus++;
-					global.choice = "Default" break;
+					turn_reset(); break;
 			case 3: bear3inst.my_defense += 5;
 					bear3inst.defense_up = true;
-					global.turnfocus++;
-					global.choice = "Default" break;
+					turn_reset(); break;
 		}
 		
 	}
@@ -102,7 +101,7 @@ if global.battlestart = true {
 			if delay = 0 {
 				if random_choice = 1 { //Attack
 					random_target.current_health -= enemy1inst.my_attack;
-					global.turnfocus++;
+					turn_reset();
 					delay = 60;
 				}
 			} break;
@@ -114,7 +113,7 @@ if global.battlestart = true {
 			if delay = 0 {
 				if random_choice = 1 { //Attack
 					random_target.current_health -= enemy2inst.my_attack;
-					global.turnfocus++;
+					turn_reset();
 					delay = 60;
 				}
 			} break;
