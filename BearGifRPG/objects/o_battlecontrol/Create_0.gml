@@ -8,4 +8,5 @@ bear3inst = ds_list_find_value(inst_ids,2);
 enemy1inst = ds_list_find_value(en_inst_ids,0);
 enemy2inst = ds_list_find_value(en_inst_ids,1);
 turninit = false;
+global.currentworld = "Battle";
 image_speed = 0.5

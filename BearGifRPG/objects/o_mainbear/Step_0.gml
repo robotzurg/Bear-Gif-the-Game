@@ -19,3 +19,7 @@ if stop_intro = false {
 		x = 832
 	}
 }
+
+/*if (attack_up) {
+	var atk_icon = instance_create_layer(x+50,y,"UI",o_attackicon);
+}*/
