@@ -4,6 +4,8 @@ open_wep_panel = false;
 open_enemy_panel = false;
 bear_team_create();
 enemy_team_create(enemy1,enemy2);
+enemynumber = ds_list_size(en_inst_ids);
+allbeings = ds_list_size(inst_ids) + ds_list_size(en_inst_ids);
 bear1inst = ds_list_find_value(inst_ids,0);
 bear2inst = ds_list_find_value(inst_ids,1);
 bear3inst = ds_list_find_value(inst_ids,2);

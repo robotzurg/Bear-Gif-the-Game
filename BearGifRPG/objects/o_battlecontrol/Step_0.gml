@@ -1,7 +1,19 @@
 /// @description
 
+if global.turnfocus > allbeings {
+	global.turnfocus = 1;
+	global.turnside = "Player"
+}
+
 if global.battlestart = true {
 	if global.turnside = "Player" {
+		if turninit = false {
+			allbeings = ds_list_size(inst_ids)+ds_list_size(en_inst_ids);
+			global.turnfocus = 1;
+			global.turnfocus = clamp(global.turnfocus,1,allbeings);
+			turninit = true;
+		}
+		
 		if open_wep_panel = true {
 			if !instance_exists(o_atkheadbutt) {
 				alarm[1] = drawdelay;
@@ -12,25 +24,31 @@ if global.battlestart = true {
 			if instance_number(o_enemyselect) != 2 {
 				drawdelay = 1;
 				alarm[1] = drawdelay;
-				select1 = instance_create_depth(496,536,"UI",o_enemyselect);
-				select2 = instance_create_depth(496,664,"UI",o_enemyselect);
-				select1.my_name = enemy1inst.my_name;
-				select2.my_name = enemy2inst.my_name;
+				if instance_exists(enemy1inst) {
+					switch enemynumber {
+					case 1:
+					select1 = instance_create_depth(496,596,"UI",o_enemyselect);
+					select1.my_name = enemy1inst.my_name;
+					case 2:
+					select1 = instance_create_depth(496,536,"UI",o_enemyselect);
+					select1.my_name = enemy1inst.my_name;
+					if instance_exists(enemy2inst) {
+					select2 = instance_create_depth(496,664,"UI",o_enemyselect);
+					select2.my_name = enemy2inst.my_name;
+					}
+					}
+				} else {
+					if instance_exists(enemy2inst) {
+					select2 = instance_create_depth(496,596,"UI",o_enemyselect);
+					select2.my_name = enemy2inst.my_name;
+					}
+				}
 			}
 		}
 		if global.turnfocus >= 4 {
 			global.turnside = "Enemy"
 		}
 		
-		if turninit = false {
-			var allbeings = ds_list_size(inst_ids)+ds_list_size(en_inst_ids);
-			global.turnfocus = 1;
-			global.turnfocus = clamp(global.turnfocus,1,allbeings);
-			turninit = true;
-		}
-	
-
-
 	switch global.turnfocus {
 		case 1: bear1inst.on_turn = true; 
 				bear3inst.on_turn = false;
@@ -52,22 +70,25 @@ if global.battlestart = true {
 			open_enemy_panel = true;
 			if mouse_check_button_pressed(mb_left) {
 				var objectClicked = instance_position(mouse_x,mouse_y,o_enemyselect);
-					if objectClicked = select1 {
-						switch global.turnfocus {
-						case 1: enemy1inst.current_health -= bear1inst.my_attack break;
-						case 2: enemy1inst.current_health -= bear2inst.my_attack break;
-						case 3: enemy1inst.current_health -= bear3inst.my_attack break;
+				if instance_exists(select1) {
+						if objectClicked = select1 {
+							switch global.turnfocus {
+							case 1: enemy1inst.current_health -= bear1inst.my_attack break;
+							case 2: enemy1inst.current_health -= bear2inst.my_attack break;
+							case 3: enemy1inst.current_health -= bear3inst.my_attack break;
+							} 
+							turn_reset();
+						} else if instance_exists(select2) {
+							if objectClicked = select2 {
+							switch global.turnfocus {
+							case 1: enemy2inst.current_health -= bear1inst.my_attack break;
+							case 2: enemy2inst.current_health -= bear2inst.my_attack break;
+							case 3: enemy2inst.current_health -= bear3inst.my_attack break;
+							}
+							turn_reset();
+							}
 						}
-						turn_reset();
-					} else if objectClicked = select2 {
-						switch global.turnfocus {
-						case 1: enemy2inst.current_health -= bear1inst.my_attack break;
-						case 2: enemy2inst.current_health -= bear2inst.my_attack break;
-						case 3: enemy2inst.current_health -= bear3inst.my_attack break;
-						}
-						turn_reset();
-					}
-				
+				}
 			}
 		}
 	}
@@ -87,10 +108,6 @@ if global.battlestart = true {
 		
 	}
 	}
-
-	if global.turnfocus > 5 {
-		global.turnfocus = 1;
-	}
 	//Enemies
 	else if global.turnside = "Enemy" {
 		switch global.turnfocus {
@@ -104,9 +121,10 @@ if global.battlestart = true {
 					turn_reset();
 					delay = 60;
 				}
-			} break;
+			} 
 			
 			case 5:
+			if instance_exists(enemy2inst) {
 			var random_choice = 1
 			var random_target = choose(bear1inst,bear2inst,bear3inst);
 			delay--;
@@ -116,12 +134,36 @@ if global.battlestart = true {
 					turn_reset();
 					delay = 60;
 				}
+			} 
+			} else {
+			turn_reset();
 			} break;
 		}
 		}
-		
-		if global.turnfocus > 5 {
-			global.turnfocus = 1;
-			global.turnside = "Player"
+		if instance_exists(enemy1inst) {
+			switch enemynumber {
+				case 1: if enemy1inst.current_health <= 0 {
+					ds_list_delete(en_inst_ids,0)
+					instance_destroy(enemy1inst);
+					room_goto_fade(rm_Arc21);
+				}
+				case 2: if enemy1inst.current_health <= 0 {
+					ds_list_delete(en_inst_ids,0)
+					instance_destroy(enemy1inst);
+					enemynumber -= 1;
+				}
+				if instance_exists(enemy2inst) {
+					if enemy2inst.current_health <= 0 {
+						ds_list_delete(en_inst_ids,1)
+						instance_destroy(enemy2inst);
+					}
+				}
+			}
+		} else if instance_exists(enemy2inst) && !instance_exists(enemy1inst) {
+			if enemy2inst.current_health <= 0 {
+				ds_list_delete(en_list_ids,1);
+				instance_destroy(enemy2inst);
+				room_goto_fade(rm_Arc21);
+		}
 		}
 }

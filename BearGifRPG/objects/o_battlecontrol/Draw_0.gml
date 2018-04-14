@@ -16,23 +16,11 @@ switch global.turnfocus {
 			 draw_sprite(bear2inst.my_sprite,idle,719,610);
 			 draw_sprite(bear3inst.my_sprite,idle,719,704); break;
 }
-draw_text(x,y+150,"Choice: " + string(global.choice));
-draw_text(x,y+200,"Open Wep Panel: " + string(open_wep_panel));
-draw_text(x,y+250,"Open Enemy Panel: " + string(open_enemy_panel));
-draw_text(x,y+300,"Target: " + string(target));
-
-if drawdelay = 0 {
-	if open_enemy_panel = true {
-		draw_line(o_atkheadbutt.x,o_atkheadbutt.y,select1.x,select1.y);
-		//draw_line(o_atkheadbutt.x,o_atkheadbutt.y,select2.x,select2.y);
-		//draw_set_halign(fa_middle);
-		draw_set_valign(fa_center);
-		draw_text_transformed(select1.x,select1.y,enemy1inst.my_name,0.8,0.8,0);
-		draw_text_transformed(select2.x,select2.y,enemy2inst.my_name,0.8,0.8,0);
-		draw_set_halign(fa_left);
-		draw_set_valign(fa_top);
-	}
-}
+/*draw_text(x,y+150,"Turn Focus: " + string(global.turnfocus));
+draw_text(x,y+200,"Turn Side: " + string(global.turnside));
+draw_text(x,y+400,"Delay " + string(delay));
+/*draw_text(x,y+250,"Open Enemy Panel: " + string(open_enemy_panel));
+draw_text(x,y+300,"Target: " + string(target));*/
 
 //Bear 1
 draw_text(813,480,"HP: " + string(bear1inst.current_health) + "/" + string(bear1inst.max_health))
