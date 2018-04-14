@@ -191,25 +191,6 @@
             }
         },
         {
-            "Key": "405ecb21-dcef-4972-bc4e-6f0e2d73dfc8",
-            "Value": {
-                "id": "e7d8aa4b-f0b9-4eba-9879-15af5e1d4aca",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "rooms\/room1\/room1.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "48504818-88c9-47b4-ad04-9ace811ba6c7",
             "Value": {
                 "id": "94d974bc-fb70-4743-9cf2-5fe3847c0072",
@@ -225,6 +206,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/sp_background\/sp_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "49f399e9-18b2-4104-b6fa-701eaa414a2f",
+            "Value": {
+                "id": "6d512909-5d33-45ea-a2d8-edf4d9dec7f0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprite16\/sprite16.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -533,25 +533,6 @@
             }
         },
         {
-            "Key": "972c13ed-6f4a-49b7-bbfb-77a15a934d3c",
-            "Value": {
-                "id": "3c55cd0e-f556-4a99-b525-b3f4226733ed",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "rooms\/room0\/room0.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "9b0111b8-0f3f-44fc-b48c-11b9ab25b1a0",
             "Value": {
                 "id": "f420d73d-cbff-4f23-986c-077b8520853b",
@@ -701,6 +682,25 @@
                 ],
                 "resourcePath": "sprites\/sprite9\/sprite9.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c4b6edc8-b958-45a5-82dd-0db436f3c69e",
+            "Value": {
+                "id": "9353491d-5878-48c1-afea-1b1b3b501e5c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/room2\/room2.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -872,6 +872,25 @@
                 ],
                 "resourcePath": "tilesets\/tileset0\/tileset0.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "f00bfcab-77f4-41a6-9d9a-0d51bf451c9c",
+            "Value": {
+                "id": "78ca4f1c-2ad9-4bd1-b196-6dd5c1a84ca0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/972c13ed-6f4a-49b7-bbfb-77a15a934d3c-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
