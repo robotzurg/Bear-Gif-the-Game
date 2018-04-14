@@ -1,10 +1,31 @@
 /// @description Draw the Battle UI
-draw_sprite(bear1inst.my_sprite,image_index,719,516);
-draw_sprite(bear2inst.my_sprite,image_index,719,610);
-draw_sprite(bear3inst.my_sprite,image_index,719,704);
+switch global.turnfocus {
+	case 1: draw_sprite(bear1inst.my_sprite,image_index,719,516);
+			draw_sprite(bear2inst.my_sprite,idle,719,610);
+			draw_sprite(bear3inst.my_sprite,idle,719,704); break;
+			
+	case 2: draw_sprite(bear1inst.my_sprite,idle,719,516);
+			draw_sprite(bear2inst.my_sprite,image_index,719,610);
+			draw_sprite(bear3inst.my_sprite,idle,719,704); break;
+			
+	case 3: draw_sprite(bear1inst.my_sprite,idle,719,516);
+			draw_sprite(bear2inst.my_sprite,idle,719,610);
+			draw_sprite(bear3inst.my_sprite,image_index,719,704); break;
+			
+	default: draw_sprite(bear1inst.my_sprite,idle,719,516);
+			 draw_sprite(bear2inst.my_sprite,idle,719,610);
+			 draw_sprite(bear3inst.my_sprite,idle,719,704); break;
+}
 draw_text(x,y,bear1inst);
 draw_text(x,y+50,bear2inst);
 draw_text(x,y+100,bear3inst);
+draw_text(x,y+150,global.battlestart);
+draw_text(x,y+200,global.turnfocus);
+draw_text(x,y+250,bear1inst.stop_intro);
+draw_text(x,y+300,bear1inst.on_turn);
+if global.alarm_done = true {
+draw_text(x,y+350,enemy1inst.t);
+}
 
 //Bear 1
 draw_text(813,480,"HP: " + string(bear1inst.current_health) + "/" + string(bear1inst.max_health))

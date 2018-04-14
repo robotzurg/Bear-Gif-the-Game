@@ -7,3 +7,5 @@ my_attack = 100
 my_defense = 100
 sprite_index = my_sprite;
 stop_intro = false;
+on_turn = false;
+x_offset = 792;

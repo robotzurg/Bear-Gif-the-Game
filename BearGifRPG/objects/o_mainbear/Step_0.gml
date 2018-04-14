@@ -9,4 +9,13 @@ if stop_intro = false {
 		global.battlestart = true;
 		stop_intro = true;
 	}
+} else if stop_intro = true {
+	if on_turn = true {
+		x = x_offset
+		image_speed = 1;
+	} else {
+		image_speed = 0;
+		image_index = idle;
+		x = 832
+	}
 }

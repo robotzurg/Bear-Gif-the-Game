@@ -18,8 +18,8 @@ var enemy2health = ds_grid_get(global.enemies,prop_enemy.health_,enemy2grid);
 var enemy2attack = ds_grid_get(global.enemies,prop_enemy.attack,enemy2grid);
 var enemy2defense = ds_grid_get(global.enemies,prop_enemy.defense,enemy2grid);
 
-var enemy1 = instance_create_layer(176,176,"Enemies",o_mainenemy);
-var enemy2 = instance_create_layer(176,288,"Enemies",o_mainenemy);
+var enemy1 = instance_create_layer(176,156,"Enemies",o_mainenemy);
+var enemy2 = instance_create_layer(176,308,"Enemies",o_mainenemy);
 
 with enemy1 {
 	my_id = enemy1id;
