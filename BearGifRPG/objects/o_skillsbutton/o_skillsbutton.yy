@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_skillsbutton",
     "eventList": [
-        
+        {
+            "id": "d137172b-562e-42fd-899a-d29cb80ec698",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 6,
+            "m_owner": "b6127d31-0958-483a-b4ed-251755dc48a6"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

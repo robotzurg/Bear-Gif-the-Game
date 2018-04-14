@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_defendbutton",
     "eventList": [
-        
+        {
+            "id": "2b53cd05-b99a-4dc5-aab7-062cc6039edc",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 6,
+            "m_owner": "f68a45fa-4b93-4bfb-995d-dfd7ee685a9f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -71,6 +71,22 @@
             }
         },
         {
+            "Key": "072a1d74-ca50-4f5c-beb6-140c93ec9526",
+            "Value": {
+                "id": "6933ff3c-128d-40e1-b082-980fb3da54c2",
+                "resourcePath": "sprites\\s_key\\s_key.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0c659c86-8f61-4579-8741-3bb96424954e",
+            "Value": {
+                "id": "ff213707-4742-4872-94c4-91b3cbc97991",
+                "resourcePath": "sounds\\mus_battle\\mus_battle.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0e2d5b0a-3cea-4561-b2ec-977b6f9b66e2",
             "Value": {
                 "id": "313aa98e-0af2-4688-8c93-85436045b5e1",
@@ -124,6 +140,14 @@
                 "id": "dd40618e-b406-4c92-bc0b-a31deeebcfd6",
                 "resourcePath": "sprites\\s_demonbear\\s_demonbear.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "214b30e6-6933-4f81-a928-ca8892eb507d",
+            "Value": {
+                "id": "c654cc04-86b3-42cb-aa51-5d41820287aa",
+                "resourcePath": "sounds\\mus_dungeon\\mus_dungeon.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -471,6 +495,14 @@
             }
         },
         {
+            "Key": "80783b26-67b0-44a0-a9c3-100937b69eaa",
+            "Value": {
+                "id": "219bc5a1-c5a7-4b6e-89bf-216e4fb533a0",
+                "resourcePath": "sprites\\bk_dungeon\\bk_dungeon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "825e73bb-ed83-4db7-93b2-077102d7ac04",
             "Value": {
                 "id": "acaa8b15-ce90-4416-aec8-a365a37c4d1b",
@@ -511,11 +543,27 @@
             }
         },
         {
+            "Key": "90d65717-f24e-4351-b55b-97e72ca97e40",
+            "Value": {
+                "id": "e79f51b6-c9b5-4323-b60d-a4eb7e11c2f7",
+                "resourcePath": "objects\\o_battlemusic\\o_battlemusic.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "912013af-6257-452e-97d5-48d913e81877",
             "Value": {
                 "id": "2adffb4d-4860-4e4b-a327-bc27dcdc721d",
                 "resourcePath": "scripts\\room_goto_fade\\room_goto_fade.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "946c1dcb-d142-468b-9a70-6e8a79ba04b4",
+            "Value": {
+                "id": "73487350-4134-41ee-abae-a3b2347f4c3c",
+                "resourcePath": "sprites\\tile_dungeon\\tile_dungeon.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -607,6 +655,14 @@
             }
         },
         {
+            "Key": "a864250f-4dee-4321-891b-14b4446c4f44",
+            "Value": {
+                "id": "b9f74286-5ce1-43f4-9aa3-f5a7e872dcc7",
+                "resourcePath": "sounds\\mus_cutscene\\mus_cutscene.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "1139e674-74a7-4ba4-87ae-cb8f0305a277",
@@ -687,6 +743,14 @@
             }
         },
         {
+            "Key": "bda4862f-1d41-4922-88dc-4e48bb164e14",
+            "Value": {
+                "id": "b36c3d2c-cb44-485c-9a32-f7f89a5847e4",
+                "resourcePath": "sounds\\mus_battle_intro\\mus_battle_intro.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "bf7deaf5-821b-4baf-9357-92ab8f2f221e",
             "Value": {
                 "id": "69e94fff-bef8-456f-b406-12784ef1156d",
@@ -732,6 +796,14 @@
                 "id": "a9a68cde-96b2-4d24-8fa5-896650f5e584",
                 "resourcePath": "views\\c2d21596-b6fb-4d63-8c29-0998ba4513a4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c3755468-f58c-481b-9163-593547e63262",
+            "Value": {
+                "id": "eeb17426-e70d-4fe7-b011-893ca41ae1f7",
+                "resourcePath": "sounds\\mus_battle_combined\\mus_battle_combined.yy",
+                "resourceType": "GMSound"
             }
         },
         {

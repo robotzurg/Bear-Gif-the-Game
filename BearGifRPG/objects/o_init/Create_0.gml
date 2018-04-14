@@ -10,6 +10,7 @@ global.team = ds_list_create();
 global.battlestart = false;
 global.turnfocus = "N/A";
 global.alarm_done = false;
+global.turnside = "N/A";
 ds_list_add(global.team,0);
 ds_list_add(global.team,1);
 ds_list_add(global.team,3);
@@ -58,9 +59,4 @@ global.location_width = 2;
 global.location_height = 1;
 a = 1;
 
-switch (global.currentworld) {
-	case "Antarctica": audio_play_sound(mus_antarctica,1000,true);
-}
-
-
-room_goto(rm_Arc12);
+room_goto(rm_Arc21);
