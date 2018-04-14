@@ -44,5 +44,5 @@ with enemy2 {
 en_inst_ids = ds_list_create();
 var enemycount = 2;
 if enemycount = 2 {
-	ds_list_add(inst_ids,enemy1,enemy2);
+	ds_list_add(en_inst_ids,enemy1,enemy2);
 }

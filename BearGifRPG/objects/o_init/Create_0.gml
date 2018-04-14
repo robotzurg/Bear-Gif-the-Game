@@ -8,9 +8,11 @@ global.dungeonmap = ds_grid_create(4,4);
 global.currentworld = "Antarctica";
 global.team = ds_list_create();
 global.battlestart = false;
-global.turnfocus = "N/A";
+global.turnfocus = "Default";
 global.alarm_done = false;
-global.turnside = "N/A";
+global.turnside = "Default";
+global.choice = "Default";
+global.attackchoice = "Default";
 ds_list_add(global.team,0);
 ds_list_add(global.team,1);
 ds_list_add(global.team,3);
@@ -33,10 +35,10 @@ bear_init(4,s_policebear,"Police Bear",1,50,10,10); //Police Bear
 bear_init(5,s_metalbear,"Metal Bear",1,50,10,10); //Metal Bear
 bear_init(6,s_shadesbear,"Shades Bear",1,50,10,10); //Shades Bear
 bear_init(7,s_rainbowbear,"Rainbow Bear",1,50,10,10);//Rainbow Bear
-bear_init(8,s_skullbear,"Skull Bear",1,50,10,10); //Skull Bear
+bear_init(8,s_skullbear,"Skull Bear",1,50,10,10); //Skull Bear SECRET IF WE HAVE TIME (WHICH WE DONT)
 
-enemy_init(0,9,s_penguin,"Penguin",50,15,0); //Penguin
-enemy_init(1,10,s_porg,"Porg",50,15,0); //Porg
+enemy_init(0,9,s_penguin,"Penguin",50,5,0); //Penguin
+enemy_init(1,10,s_porg,"Porg",50,10,0); //Porg
 enemy_init(2,11,s_ghostpenguin,"Ghost Penguin",50,15,0); //Ghost Penguin
 enemy_init(3,12,s_ghostpenguin,"Floppy Penguin",50,15,0); //Floppy Penguin
 enemy_init(4,13,s_ghostpenguin,"Traitor Bear",50,15,0); //Traitor Bear
