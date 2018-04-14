@@ -191,6 +191,25 @@
             }
         },
         {
+            "Key": "405ecb21-dcef-4972-bc4e-6f0e2d73dfc8",
+            "Value": {
+                "id": "e7d8aa4b-f0b9-4eba-9879-15af5e1d4aca",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/room1\/room1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "48504818-88c9-47b4-ad04-9ace811ba6c7",
             "Value": {
                 "id": "94d974bc-fb70-4743-9cf2-5fe3847c0072",
@@ -834,6 +853,25 @@
                 ],
                 "resourcePath": "views\/dfc96470-09f1-433d-99fa-21d3a6fc06de.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "eaa6d096-88eb-4e1a-9ef3-ee332cb748a2",
+            "Value": {
+                "id": "6f4fecda-dca9-4962-a13a-905c3c09b7d0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/tileset0\/tileset0.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
