@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "43a2dadb-ea41-4449-b3bd-1849e7062535",
+            "Value": {
+                "id": "1090a0d4-180e-4238-80f6-5226250d6753",
+                "resourcePath": "sprites\\s_lockeddoors\\s_lockeddoors.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "446779f0-70cd-446b-8f83-ef3d8eea8a6b",
             "Value": {
                 "id": "68a399c3-d4ae-4181-a410-0ae0df6314b2",
@@ -995,6 +1003,14 @@
             "Value": {
                 "id": "2af4ff30-0af9-4779-92c0-68d2f115a54d",
                 "resourcePath": "sprites\\s_defenseicon\\s_defenseicon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ecf032e0-6744-45b8-b93e-fb8813b1a97a",
+            "Value": {
+                "id": "daa11864-62d6-49fc-b80a-63f959e52c7e",
+                "resourcePath": "sprites\\s_tilegrass\\s_tilegrass.yy",
                 "resourceType": "GMSprite"
             }
         },
